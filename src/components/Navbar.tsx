@@ -1,7 +1,8 @@
-import { Moon, Sun, Search, Newspaper } from "lucide-react";
+import { Moon, Sun, Search, Newspaper, Settings } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   isDark: boolean;
@@ -46,6 +47,9 @@ export function Navbar({ isDark, onToggleTheme, searchQuery, onSearchChange }: N
           </Button>
           <Button variant="ghost" size="icon" onClick={onToggleTheme}>
             {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+          </Button>
+          <Button variant="ghost" size="icon" asChild>
+            <Link to="/admin"><Settings className="h-5 w-5" /></Link>
           </Button>
         </div>
       </div>
