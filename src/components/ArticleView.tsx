@@ -1,7 +1,7 @@
 import { ArrowLeft, Clock, Eye, Heart, Bookmark, BookmarkCheck, Share2, Minus, Plus } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Article, sampleArticles } from "@/data/sampleArticles";
+import { Article } from "@/data/sampleArticles";
 import { ArticleCard } from "./ArticleCard";
 import { useState } from "react";
 
@@ -11,13 +11,14 @@ interface ArticleViewProps {
   isBookmarked: boolean;
   onToggleBookmark: (id: string) => void;
   onArticleClick: (id: string) => void;
+  allArticles?: Article[];
 }
 
-export function ArticleView({ article, onBack, isBookmarked, onToggleBookmark, onArticleClick }: ArticleViewProps) {
+export function ArticleView({ article, onBack, isBookmarked, onToggleBookmark, onArticleClick, allArticles = [] }: ArticleViewProps) {
   const [fontSize, setFontSize] = useState(16);
   const [liked, setLiked] = useState(false);
 
-  const related = sampleArticles
+  const related = allArticles
     .filter((a) => a.category === article.category && a.id !== article.id)
     .slice(0, 3);
 
