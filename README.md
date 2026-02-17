@@ -88,6 +88,9 @@ NEWS-NOVA/
 ```bash
 git clone https://github.com/yashpawar9274/NEWS-NOVA.git
 cd NEWS-NOVA
+NPM INSTALL
+
 ```
-npm install
-```
+
+
+
