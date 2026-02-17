@@ -1,4 +1,4 @@
-import { Moon, Sun, Search, Newspaper, Settings } from "lucide-react";
+import { Moon, Sun, Search, Newspaper, Settings, PenLine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -37,6 +37,9 @@ export function Navbar({ isDark, onToggleTheme, searchQuery, onSearchChange }: N
         </div>
 
         <div className="flex items-center gap-2">
+          <Button variant="ghost" size="sm" asChild className="hidden sm:flex">
+            <Link to="/submit"><PenLine className="h-4 w-4 mr-1" /> Submit News</Link>
+          </Button>
           <Button
             variant="ghost"
             size="icon"

@@ -25,13 +25,13 @@ export function useAllArticles() {
   return useQuery({
     queryKey: ["all-articles"],
     queryFn: async () => {
-      // Need to read all articles including unpublished for admin
-      const { data, error } = await supabase
-        .from("articles")
-        .select("*")
-        .order("created_at", { ascending: false });
+      const password = sessionStorage.getItem("admin_verified") === "true" ? "Ashking" : "";
+      const { data, error } = await supabase.functions.invoke("admin-articles", {
+        body: { password, action: "list" },
+      });
       if (error) throw error;
-      return data as DbArticle[];
+      if (data?.error) throw new Error(data.error);
+      return data.articles as DbArticle[];
     },
   });
 }
