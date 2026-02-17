@@ -1,1 +1,13 @@
 project_id = "ximqqxellreltocvclps"
+
+[functions.verify-admin]
+verify_jwt = false
+
+[functions.ai-moderate]
+verify_jwt = false
+
+[functions.ai-generate-news]
+verify_jwt = false
+
+[functions.admin-articles]
+verify_jwt = false
