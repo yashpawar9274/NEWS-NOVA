@@ -23,6 +23,7 @@ export type Database = {
           excerpt: string
           id: string
           image_url: string | null
+          is_approved: boolean
           is_breaking: boolean
           is_featured: boolean
           is_published: boolean
@@ -30,6 +31,7 @@ export type Database = {
           likes: number
           publish_date: string
           read_time: number
+          submitted_by: string | null
           title: string
           updated_at: string
           views: number
@@ -42,6 +44,7 @@ export type Database = {
           excerpt: string
           id?: string
           image_url?: string | null
+          is_approved?: boolean
           is_breaking?: boolean
           is_featured?: boolean
           is_published?: boolean
@@ -49,6 +52,7 @@ export type Database = {
           likes?: number
           publish_date?: string
           read_time?: number
+          submitted_by?: string | null
           title: string
           updated_at?: string
           views?: number
@@ -61,6 +65,7 @@ export type Database = {
           excerpt?: string
           id?: string
           image_url?: string | null
+          is_approved?: boolean
           is_breaking?: boolean
           is_featured?: boolean
           is_published?: boolean
@@ -68,6 +73,7 @@ export type Database = {
           likes?: number
           publish_date?: string
           read_time?: number
+          submitted_by?: string | null
           title?: string
           updated_at?: string
           views?: number
