@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# 📰 NEWS-NOVA
 
-## Project info
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-blue?logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/Vite-Fast-purple?logo=vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-Modern-38B2AC?logo=tailwind-css" />
+  <img src="https://img.shields.io/badge/Supabase-Backend-3ECF8E?logo=supabase" />
+  <img src="https://img.shields.io/badge/Status-Active-success" />
+</p>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+<p align="center">
+  <b>Modern News Platform Built with React + Supabase</b><br/>
+  Fast • Responsive • Scalable • Real-Time Ready
+</p>
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 About The Project
 
-**Use Lovable**
+NEWS-NOVA is a modern, scalable news web application built using **React + TypeScript + Vite**, styled with **Tailwind CSS**, and powered by **Supabase** backend services.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+The objective of this project is to build a professional news platform that allows users to browse categorized news, search articles, and manage personalized content.
 
-Changes made via Lovable will be committed automatically to this repo.
+This project demonstrates:
+- Clean frontend architecture
+- Backend integration using Supabase
+- Modern UI/UX practices
+- Production-ready structure
+- Scalable development approach
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ✨ Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- 📰 Category-based news browsing
+- 🔍 Smart search functionality
+- 👤 User Authentication (Supabase Auth)
+- ❤️ Bookmark / Save Articles
+- ⚡ Lightning-fast performance (Vite)
+- 📱 Fully Responsive Design
+- 🌙 Modern UI using Tailwind + shadcn
+- 🔐 Secure environment configuration
+- 🔄 Backend-ready for real-time updates
+- 🛠 Admin dashboard ready (Future Scope)
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+| Technology | Purpose |
+|------------|----------|
+| React 18 | Frontend UI |
+| TypeScript | Type Safety |
+| Vite | Dev & Build Tool |
+| Tailwind CSS | Styling |
+| Supabase | Backend + Auth |
+| React Router | Navigation |
+| React Query | Data Fetching |
+| Zod | Form Validation |
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 📂 Project Structure
+```
+NEWS-NOVA/
+├── public/
+├── src/
+│ ├── components/
+│ ├── pages/
+│ ├── hooks/
+│ ├── services/
+│ ├── utils/
+│ └── App.tsx
+├── supabase/
+├── .env
+├── package.json
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## ⚙️ Installation & Setup
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 1️⃣ Clone Repository
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```bash
+git clone https://github.com/yashpawar9274/NEWS-NOVA.git
+cd NEWS-NOVA
+```
+npm install
+```
